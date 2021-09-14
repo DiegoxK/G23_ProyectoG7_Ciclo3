@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap 5</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="p-3 bg-dark text-white">
+      <nav class="container">
+        <h1 class="text-center">Peluditos</h1>
+        <div
+          class="
+            d-flex
+            flex-wrap
+            align-items-center
+            justify-content-center justify-content-lg-start
+          "
+        >
+          <a
+            href="/"
+            class="
+              d-flex
+              align-items-center
+              mb-2 mb-lg-0
+              text-white text-decoration-none
+            "
+          >
+            <img src="/src/images/icons8-dog-100.png" alt="logo" />
+
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="
+              nav
+              col-12 col-lg-auto
+              me-lg-auto
+              mb-2
+              justify-content-center
+              mb-md-0
+            "
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Adopciones</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Donaciones</a></li>
+            <li>
+              <a href="#" class="nav-link px-2 text-white">Compra articulos</a>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+
+          <div class="text-end">
+            <button
+              type="button"
+              onclick="window.location.href='login.html'"
+              class="btn btn-outline-light me-2"
+            >
+              Login
+            </button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cabecera Imagen-->
+    <main>
+      <div class="cabecera">
+        <img
+          src="/src/images/photo-1568393691622-c7ba131d63b4.jpg"
+          class="img-fluid"
+          alt="cabecera"
+        />
+      </div>
+    </main>
+    <!--Seccion de servicios -->
+    <section id="services" class="services-section">
+      <div class="container py-5">
+        <h2>Servicios</h2>
+        <div class="row g-5 py-5 row-cols-1 row-cols-lg-3 container-fluid">
+          <!-- Servicio1 -->
+          <div class="feature col">
+            <div>
+              <img
+                src="/src/images/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg"
+                class="img-fluid servicios-imagen"
+              />
+            </div>
+            <h2>Servicio 1</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Adopta!
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- Servicio 2 -->
+          <div class="feature col">
+            <div>
+              <img
+                src="/src/images/photo-1529778873920-4da4926a72c2.jpg"
+                class="img-fluid servicios-imagen"
+              />
+            </div>
+            <h2>Servicio 2</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- Servicio 3 -->
+          <div class="feature col">
+            <div>
+              <img
+                src="/src/images/photo-1415369629372-26f2fe60c467.jpg"
+                class="img-fluid servicios-imagen"
+              />
+            </div>
+            <h2>Servicio 3</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias -->
+    <section id="news" class="news-section">
+      <div class="container">
+        <h2>Noticias</h2>
+        <div
+          class="
+            row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4
+            g-4
+            py-5
+          "
+        >
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#calendar3"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#home"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-muted flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+            >
+              <use xlink:href="#tools"></use>
+            </svg>
+            <div>
+              <h4 class="fw-bold mb-0">Featured title</h4>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion de equipo -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2>Equipo</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              "
+              style="background-image: url('unsplash-photo-1.jpg')"
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                "
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Short title, long jacket
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Earth</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              "
+              style="background-image: url('unsplash-photo-2.jpg')"
+            >
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  h-100
+                  p-5
+                  pb-3
+                  text-white text-shadow-1
+                "
+              >
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Much longer title that wraps to multiple lines
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="
+                card card-cover
+                h-100
+                overflow-hidden
+                text-white
+                bg-dark
+                rounded-5
+                shadow-lg
+              "
+              style="background-image: url('unsplash-photo-3.jpg')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Another longer title belongs here
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="footer-section">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JScript -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
