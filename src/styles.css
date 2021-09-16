@@ -15,6 +15,14 @@
   display: block;
 }
 
+.bs-teal {
+  background-color: #3cf197;
+}
+
+.img-height {
+  height: 200px;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

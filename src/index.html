@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boostrap 5</title>
+    <title>Peluditos</title>
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="p-3 bg-dark text-white">
-      <nav class="container">
+    <header class="p-3 bg-light text-white">
+      <nav class="container bs-teal rounded">
         <h1 class="text-center">Peluditos</h1>
         <div
           class="
@@ -52,24 +52,23 @@
               mb-md-0
             "
           >
-            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Adopciones</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Donaciones</a></li>
+            <li><a href="#Inicio" class="nav-link px-2 text-secondary">Inicio</a></li>
+            <li><a href="/src/Adopciones.html" class="nav-link px-2 text-white">Adopciones</a></li>
+            <li><a href="/src/Donaciones.html" class="nav-link px-2 text-white">Donaciones</a></li>
             <li>
-              <a href="#" class="nav-link px-2 text-white">Compra articulos</a>
+              <a href="/src/compraArticulos.html" class="nav-link px-2 text-white">Compra Artículos</a>
             </li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
           </ul>
 
           <div class="text-end">
             <button
               type="button"
-              onclick="window.location.href='login.html'"
+              onclick="window.location.href='/src/login.html'"
               class="btn btn-outline-light me-2"
             >
               Login
             </button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
+            <button type="button" onclick="window.location.href='/src/register.html'" class="btn btn-outline-light me-2">Sign-up</button>
           </div>
         </div>
       </nav>
@@ -77,12 +76,28 @@
 
     <!-- Cabecera Imagen-->
     <main>
-      <div class="cabecera">
-        <img
-          src="/src/images/photo-1568393691622-c7ba131d63b4.jpg"
-          class="img-fluid"
-          alt="cabecera"
-        />
+      <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/src/images/1-small.jpg" class="d-block w-100" alt="dog img">
+            </div>
+            <div class="carousel-item">
+              <img src="/src/images/2-small.jpg" class="d-block w-100" alt="dog img">
+            </div>
+            <div class="carousel-item">
+              <img src="/src/images/3-small.jpg" class="d-block w-100" alt="dog img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </main>
     <!--Seccion de servicios -->
