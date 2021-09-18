@@ -24,62 +24,30 @@
   text-align: center;
 
 }
-.n1 {
+.n1, .n3 {
   position: absolute;
   width: 20%;
   height: 35%;
   left: 10em;
   right: 10em;
-  border: 1px solid #333;
-  background-image: url("https://media.gq.com.mx/photos/5ff487020507c68ea515841b/16:9/w_1366%2cc_limit/PERRO.jpg");
-  background-position: 50% 50%;
-  background-size:cover;
+  border: 4px solid #333;
   
-}
-.n2 {
-  position: absolute;
-  width: 20%;
-  height: 35%;
-  left: 50em;
-  right: 50em;
-  border: 1px solid #333;
-  background-image: url("https://www.bing.com/images/blob?bcid=TtBFJJoJnzsDVHlTACj3odlJwFjd.....0c");
-  background-position: 50% 50%;
-  background-size:cover;
   
-}
-.n3 {
-  position: absolute;
-  width: 20%;
-  height: 35%;
-  left: 10em;
-  right: 10em;
-  border: 1px solid #333;
-  background-image: url("https://es.himgs.com/imagenes/estar-bien/20190215137141/razas-perro-pequenos-gt/0-645-998/perros-miniatura-t.jpg");
-  background-position: 50% 50%;
-  background-size:cover;
-  
-}
-.n4{
-  position: absolute;
-  width: 20%;
-  height: 35%;
-  left: 50em;
-  right: 50em;
-  border: 1px solid #333;
-  background-image: url("https://es.himgs.com/imagenes/estar-bien/20190215137141/razas-perro-pequenos-gt/0-645-998/perros-miniatura-t.jpg");
-  background-position: 50% 50%;
-  background-size:cover;
-  
-}
-#img{
-  position:backgroung;
-  width: 100%;
-  height: 80%;
 }
 
-h4{
-  color: white;
+.n2, .n4{
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  left: 50em;
+  right: 50em;
+  border: 4px solid #333;
+}
+
+#news1,#news2, #news3, #news4{
+  position:backgroung;
+  width: 100%;
+  height: 100%;
 }
 /*Section news*/
 
