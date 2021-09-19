@@ -15,6 +15,52 @@
   display: block;
 }
 
+.bs-teal {
+  background-color: #62f5abed;
+}
+
+.img-icon {
+  height: 30%;
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+/*Section news*/
+.n-container {
+
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+}
+.n1, .n3 {
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  left: 10em;
+  right: 10em;
+  border: 4px solid #333;
+  
+  
+}
+
+.n2, .n4{
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  left: 50em;
+  right: 50em;
+  border: 4px solid #333;
+}
+
+#news1,#news2, #news3, #news4{
+  position:backgroung;
+  width: 100%;
+  height: 100%;
+}
+/*Section news*/
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
