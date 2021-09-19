@@ -25,6 +25,46 @@
   display: block;
   margin: auto;
 }
+
+/*Section news*/
+.n1, .n3 {
+  
+  width: 45%;
+  height: 75%;
+  left: 10em;
+  right: 10em;
+  border: 4px solid #62f5abed;
+  
+  
+}
+
+.n2, .n4{
+  
+  width: 45%;
+  height: 75%;
+  left: 50em;
+  right: 50em;
+  border: 4px solid #62f5abed;
+}
+
+#news1,#news2, #news3, #news4{
+  position:backgroung;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+    background-color: #62f5abed;
+    border-color:#62f5abed ;
+    color: black;
+    
+}
+/* fin section news*/
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
