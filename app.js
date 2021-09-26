@@ -35,7 +35,7 @@ app.use(history());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //configuración  de puerto automático
-app.set('puerto', process.env.PORT || 3000);
+app.set('puerto', process.env.PORT || 5502);
 app.listen(app.get('puerto'), function () {
     console.log('El servidor nos conecta por el puerto ' + app.get('puerto'));
 });
