@@ -1,15 +1,35 @@
 {
-  "name": "g23_proyecto_7",
+  "name": "G23_ProyectoG7_Ciclo3",
   "version": "1.0.0",
-  "description": "",
+  "description": "La Fundación Peluditos tiene como objeto el rescate de animales en situación de abandono o vulnerabilidad, los animales rescatados son perros o gatos los cuales se encuentran en hogares de paso por un tiempo no mayor a 45 días, luego de este tiempo pasan a un albergue, actualmente se dan a conocer por redes sociales como instagram y facebook, pero en estos canales no tienen centralizada la información para las adopciones, donaciones y ventas de artículos, por lo tanto se busca crear  una página web para gestionar de forma sincronizada las adopciones, tener control en el stock disponible de productos para vender y realizar la venta de los mismos, con esto se busca dar a conocer aún más la fundación y maximizar las adopciones, la página  brindará varias opciones al usuario ya que podrá visualizar las mascotas para adoptar, diligenciando el formulario de adopción Online, tendrá opciones de pago compra y pago de los productos y una opción de realizar las donaciones a la fundación, las donaciones podrán ser en valor o implementos para ayudar en los albergues, el usuario tendrá la opción de registrarse para poder obtener una cuenta de la página para realizar la adopción o compra de algún artículo, de lo contrario no podrá, la página garantiza una seguridad y protección de datos personales al usuario.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "devbabel": "nodemon app.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoxK/G23_ProyectoG7_Ciclo3.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoxK/G23_ProyectoG7_Ciclo3/issues"
+  },
+  "homepage": "https://github.com/DiegoxK/G23_ProyectoG7_Ciclo3#readme",
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "connect-history-api-fallback": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6"
   }
 }
