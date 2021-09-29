@@ -6,7 +6,8 @@ import history from "connect-history-api-fallback";
 import mongoose from "mongoose";
 
 //server mongoose
-const uri = "mongodb://localhost:27017/mytest";
+const uri =
+  "mongodb+srv://Diego:Awadepanela1@cluster0.3f6p4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const db = mongoose.connection;
 
 mongoose.connect(uri);
@@ -31,9 +32,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", require("./routes/users"));
 
 //routes
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello");
+// });
 
 //History routes
 app.use(history());
