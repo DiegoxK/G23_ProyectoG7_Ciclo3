@@ -9,7 +9,7 @@
                 <use xlink:href="#bootstrap"></use>
               </svg>
               <div class="n1" >
-                <img src="images/news1.png" id="news1">
+                <img src="../../assets/images/index/noticias/news1.png" id="news1">
                 <h4 class="fw-bold mb-0"></h4><br>
                 <div class="col text-center">
                   <a class="btn btn-outline-dark" href="https://www.instagram.com/p/B-j_aUggu8h/" role="button">Ver más </a>
@@ -21,7 +21,7 @@
                 <use xlink:href="#cpu-fill"></use>
               </svg>
               <div class="n2">
-                <img  src="images/news2.png" id="news2">
+                <img  src="../../assets/images/index/noticias/news2.png" id="news2">
                 <div class="col text-center"><br>
                   <a class="btn btn-outline-dark" href= "https://www.instagram.com/p/CQB1bvWnMG2/"  role="button">Ver más </a>
                 </div>  
@@ -32,7 +32,7 @@
                 <use xlink:href="#calendar3"></use>
               </svg>
               <div class="n3">
-                <img  src="images/news3.png" id="news3" class="rounder">
+                <img  src="../../assets/images/index/noticias/news3.png" id="news3" class="rounder">
                 <div class="col text-center"><br>
                   <a class="btn btn-outline-dark" href= "https://www.instagram.com/p/CL4jr2LAKUk/"  role="button">Ver más </a>
                 </div>  
@@ -43,7 +43,8 @@
                 <use xlink:href="#home"></use>
               </svg>
               <div class="n4">
-                <img src="images/news4.png" id="news4">
+                <img src="../../assets/images/index/noticias/news4.png" id="news4">
+
                 <div class="col text-center"><br>
                   <a class="btn btn-outline-dark" href= "https://www.instagram.com/p/B-j735dAPaO/"  role="button" >Ver más </a>
                 </div>
