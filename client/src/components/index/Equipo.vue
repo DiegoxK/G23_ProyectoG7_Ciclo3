@@ -7,6 +7,7 @@
         <div class="col">
           <div
             class="
+                h-100
                 card card-cover
                 h-10
                 overflow-hidden
@@ -23,9 +24,9 @@
                 src="../../assets/images/index/equipo/team1.jpg"
                 alt=""
               />
-              <p class="text-justify lead reguldisplay-6 lh-1 fw-bold">
+              <p class=" lead reguldisplay-6 lh-1 fw-bold">
                 <br />
-                Janet es una de nuestras colaboradoras mas nuevas, lleva con
+                <h3 class='text-center'>Janet</h3> Es una de nuestras colaboradoras mas nuevas, lleva con
                 nosotros 2 años y es la encargada de velar por la seguridad de
                 nuestros amiguitos en los hogares de paso.
                 <br />
@@ -37,6 +38,7 @@
         <div class="col">
           <div
             class="
+                h-100
                 card card-cover
                 h-10
                 overflow-hidden
@@ -48,13 +50,13 @@
           >
             <article class="team-info">
               <img
-                class="img-responsive img-thumbnail"
+                class="img-responsive img-thumbnail " 
                 src="../../assets/images/index/equipo/team2.jpg"
                 alt=""
               />
-              <p class="text-justify lead reguldisplay-6 lh-1 fw-bold">
+              <p class=" lead reguldisplay-6 lh-1 fw-bold">
                 <br />
-                Samuel es nuestro veterinario de confianza y co-fundador de la
+               <h3 class='text-center'>Samuel</h3> Es nuestro veterinario de confianza y co-fundador de la
                 fundación PELUDITOS, es el encargado de los tratamientos médicos
                 que requieren nuestros amiguitos.
                 <br />
@@ -66,6 +68,7 @@
         <div class="col">
           <div
             class="
+                h-100
                 card card-cover
                 h-10
                 overflow-hidden
@@ -81,9 +84,9 @@
                 src="../../assets/images/index/equipo/team3.jpg"
                 alt=""
               />
-              <p class="text-justify lead reguldisplay-6 lh-1 fw-bold">
+              <p class=" lead reguldisplay-6 lh-1 fw-bold">
                 <br />
-                Conoce a Martha, lleva mas de 10 años vigilando el proceso de
+               <h3 class='text-center'> Conoce a Martha</h3> Lleva mas de 10 años vigilando el proceso de
                 adopciones y los rescates de peluditos que se encuentren en
                 vulnerabilidad.
                 <br />
@@ -95,6 +98,7 @@
         <div class="col">
           <div
             class="
+                h-100
                 card card-cover
                 h-100
                 overflow-hidden
@@ -110,9 +114,9 @@
                 src="../../assets/images/index/equipo/team4.jpg"
                 alt=""
               />
-              <p class="text-justify lead reguldisplay-6 lh-1 fw-bold">
+              <p class=" lead reguldisplay-6 lh-1 fw-bold">
                 <br />
-                Carlos es co-fundador de PELUDITOS, su amor por los menos
+               <h3 class='text-center'> Carlos</h3> Es co-fundador de PELUDITOS, su amor por los menos
                 favorecidos es tan grande que lucha día a día por darles un
                 espacio lleno de amor y seguridad.
                 <br />
