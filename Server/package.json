@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "app.js --exec babel-node",
     "dev": "nodemon app.js",
     "devbabel": "nodemon app.js --exec babel-node"
   },
