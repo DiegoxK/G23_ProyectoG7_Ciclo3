@@ -1,0 +1,48 @@
+//modules
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
+import history from "connect-history-api-fallback";
+import mongoose from "mongoose";
+
+//server mongoose
+const uri = "mongodb://localhost:27017/mytest";
+const db = mongoose.connection;
+
+mongoose.connect(uri);
+
+db.once("open", () => {
+  console.log("Database is conected to: ", uri);
+});
+
+db.on("error", (err) => {
+  console.log(err);
+});
+
+//server html requests
+const app = express();
+
+//middlewares
+app.use(express.json());
+app.use(morgan("tiny"));
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+//==============================================================
+app.use("/api", require("./routes/users"));
+
+//routes
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
+
+//History routes
+app.use(history());
+
+//staticRouter
+app.use(express.static("./static"));
+
+//puerto
+app.set("port", process.env.PORT || 3000);
+app.listen(app.get("port"), () => {
+  console.log("Server listen to port: " + app.get("port"));
+});
