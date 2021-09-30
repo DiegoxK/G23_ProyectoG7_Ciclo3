@@ -22,12 +22,22 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
                 class="btn btn-outline-success"
               >
                 Adoptalo ya
               </button>
+              <button
+                v-else
+                onclick="window.location.href='/register'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
@@ -98,7 +108,16 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+              <button
+                v-else
+                onclick="window.location.href='/register'"
                 type="button"
                 class="btn btn-outline-success"
               >
@@ -177,7 +196,16 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+              <button
+                v-else
+                onclick="window.location.href='/register'"
                 type="button"
                 class="btn btn-outline-success"
               >
@@ -260,7 +288,16 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+              <button
+                v-else
+                onclick="window.location.href='/register'"
                 type="button"
                 class="btn btn-outline-success"
               >
@@ -339,7 +376,16 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+              <button
+                v-else
+                onclick="window.location.href='/login'"
                 type="button"
                 class="btn btn-outline-success"
               >
@@ -417,7 +463,16 @@
             </div>
             <div class="card-footer">
               <button
+                v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                Adoptalo ya
+              </button>
+              <button
+                v-else
+                onclick="window.location.href='/register'"
                 type="button"
                 class="btn btn-outline-success"
               >
