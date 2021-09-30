@@ -42,6 +42,14 @@
             rows="3"
           />
         </div>
+        <div class=" mt-3">
+          <textarea
+            v-model="register.img"
+            class="border-teal form-control"
+            placeholder="Enlace de la imagen"
+            rows="2"
+          />
+        </div>
         <div>
           <button
             class="w-100 mt-3 btn btn-lg btn-outline-teal"
@@ -76,6 +84,7 @@ export default {
         nombre: "",
         edadMascota: "",
         descripcion: "",
+        img: "",
       },
     };
   },
@@ -88,6 +97,7 @@ export default {
           this.register.nombre = "";
           this.register.edadMascota = "";
           this.register.descripcion = "";
+          this.register.img = "";
 
           console.log(res.data.message);
         })

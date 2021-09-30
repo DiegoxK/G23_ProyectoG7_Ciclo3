@@ -27,9 +27,9 @@ const routes = [
     component: () => import("../views/AdminVista.vue"),
   },
   {
-    path: "/test",
-    name: "test",
-    component: () => import("../views/Test.vue"),
+    path: "/adopcion",
+    name: "Adopcion",
+    component: () => import("../views/Successfull.vue"),
   },
   {
     path: "/petRegister",
