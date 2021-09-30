@@ -1,60 +1,89 @@
 <template>
   <div class="container-fluid">
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">UserName</th>
-          <th scope="col">Password</th>
-          <th scope="col">State</th>
-          <th scope="col">Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(admin, index) in admins" :key="index">
-          <th scope="row">{{ admin._id }}</th>
-          <td>{{ admin.userName }}</td>
-          <td>{{ admin.password }}</td>
-          <td>{{ admin.logged }}</td>
-          <td>
-            <button
-              class="btn-warning btn-sm mx-2"
-              @click="enableEdit(admin._id)"
-            >
-              Edit
-            </button>
-            <button
-              class="btn-danger btn-sm mx-2"
-              @click="deleteUser(admin._id)"
-            >
-              Delete
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div v-if="edit == false">
-      Hello there
+    <Header />
+
+    <div class="p-5"></div>
+
+    <div>
+      <table
+        v-if="check === 'true' && userType === 'admin'"
+        class="table table-white"
+      >
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de Casa</th>
+            <th>Mascota?</th>
+            <th>Castrada?</th>
+            <th>Edad Mascota</th>
+            <th>Tipo de Usuario</th>
+            <th>Correo Electronico</th>
+            <th>Telefono</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(user, index) in users" :key="index">
+            <td>{{ user.nombre }}</td>
+            <td>{{ user.apellido }}</td>
+            <td>{{ user.tipoDeCasa }}</td>
+            <td>{{ user.mascota }}</td>
+            <td>{{ user.castrada }}</td>
+            <td>{{ user.edadMascota }}</td>
+            <td>{{ user.userType }}</td>
+            <td>{{ user.correoElectronico }}</td>
+            <td>{{ user.telefono }}</td>
+            <td>
+              <button
+                class="btn-warning btn-sm mx-2"
+                @click="enableEdit(user._id)"
+              >
+                Edit
+              </button>
+              <button
+                class="btn-danger btn-sm mx-2"
+                @click="deleteUser(user._id)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div v-else>
-      <form @submit.prevent="editUser(adminEdit._id)">
+
+    <div v-if="edit == true">
+      <form @submit.prevent="editUser(userEdit._id)">
         <h3 class="text-center">Edit User</h3>
         <input
           type="text"
           placeholder="Enter new user name"
           class="form-control my-2"
-          v-model="adminEdit.userName"
+          v-model="userEdit.nombre"
         />
         <input
           type="text"
           placeholder="Enter new password"
           class="form-control my-2"
-          v-model="adminEdit.password"
+          v-model="userEdit.apellido"
+        />
+        <input
+          type="text"
+          placeholder="Enter new email"
+          class="form-control my-2"
+          v-model="userEdit.correoElectronico"
+        />
+        <input
+          type="text"
+          placeholder="Enter new phone number"
+          class="form-control my-2"
+          v-model="userEdit.telefono"
         />
         <button class="btn-sm btn-block mb-1 btn-warning" type="submit">
           Edit
         </button>
-        <button class="btn-sm btn-danger " @click="disableEdit(admin._id)">
+        <button class="btn-sm btn-danger " @click="disableEdit(user._id)">
           Cancel
         </button>
       </form>
@@ -63,12 +92,16 @@
 </template>
 
 <script>
+import Header from "../components/Header.vue";
 export default {
+  components: { Header },
   data() {
     return {
       edit: false,
-      adminEdit: {},
-      admins: [],
+      userEdit: {},
+      users: [],
+      check: Header.methods.readCookie("check"),
+      userType: Header.methods.readCookie("userType"),
     };
   },
   created() {
@@ -77,10 +110,10 @@ export default {
   methods: {
     listCredentials() {
       axios
-        .get("http://localhost:3000/api/user-admin")
+        .get("http://localhost:3000/api/user")
         .then((response) => {
           console.log(response.data);
-          this.admins = response.data;
+          this.users = response.data;
         })
         .catch((e) => {
           console.log("error" + e);
@@ -89,9 +122,9 @@ export default {
     enableEdit(id) {
       this.edit = true;
       axios
-        .get(`http://localhost:3000/api/user-admin/${id}`)
+        .get(`http://localhost:3000/api/user/${id}`)
         .then((res) => {
-          this.adminEdit = res.data;
+          this.userEdit = res.data;
         })
         .catch((e) => {
           console.log(e.response);
@@ -103,7 +136,7 @@ export default {
 
     editUser(id) {
       axios
-        .put(`http://localhost:3000/api/user-admin/${id}`, this.adminEdit)
+        .put(`http://localhost:3000/api/user/${id}`, this.userEdit)
         .then((res) => {
           this.listCredentials();
           this.edit = false;
@@ -114,7 +147,7 @@ export default {
     },
     deleteUser(id) {
       axios
-        .delete(`http://localhost:3000/api/user-admin/${id}`)
+        .delete(`http://localhost:3000/api/user/${id}`)
         .then((res) => {
           this.listCredentials();
         })

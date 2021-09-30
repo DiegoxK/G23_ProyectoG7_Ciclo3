@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const usuarioSchema = Schema({
+  userType: { type: String, default: "user" },
   capacidadDeAdopcion: { type: Boolean, default: true },
   nombre: { type: String, required: [true, "Nombre Obligatorio"] },
   apellido: { type: String, required: [true, "Apellido Obligatorio"] },
