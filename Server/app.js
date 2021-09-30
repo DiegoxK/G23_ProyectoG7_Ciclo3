@@ -29,6 +29,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 //==============================================================
 app.use("/api", require("./routes/users"));
+app.use("/api", require("./routes/pets"));
 
 //routes
 app.get("/", (req, res) => {

@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "axios": "^0.21.4",
+    "bootstrap": "^5.1.1",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "vue": "^3.2.19",
     "vue-axios": "^3.3.7",
     "vue-router": "^4.0.0-0"
   },

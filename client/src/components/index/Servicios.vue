@@ -20,8 +20,12 @@
               agredecerá. !Dona Ya!
             </p>
 
-            <button type="button" class="btn btn-outline-dark">
-              <a href="Donaciones.html" class="icon-link"></a>donaciones!!
+            <button
+              onclick="window.location.href='https://www.paypal.com/co/home'"
+              type="button"
+              class="btn btn-outline-dark"
+            >
+              Donaciones!!
             </button>
 
             <svg class="bi" width="1em" height="1em">
@@ -43,8 +47,12 @@
               mercado para aseo, alimentación y salud.
             </p>
 
-            <button type="button" class="btn btn-outline-dark">
-              <a href="Productos.html" class="icon-link"></a>Compra ya!
+            <button
+              onclick="window.location.href='https://listado.mercadolibre.com.co/productos-animales#D[A:productos%20animales]'"
+              type="button"
+              class="btn btn-outline-dark"
+            >
+              Compra Ya!
             </button>
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right"></use>
@@ -65,8 +73,12 @@
               corazón y en tu alma.
             </p>
 
-            <button type="button" class="btn btn-outline-dark">
-              <a href="adopciones.html" class="icon-link"></a>Adopta ya!!
+            <button
+              type="button"
+              onclick="window.location.href='/adopciones'"
+              class="btn btn-outline-dark"
+            >
+              Adopta ya!!
             </button>
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right"></use>

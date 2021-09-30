@@ -1,45 +1,63 @@
 <template>
-  <div class="usuario">
+  <div class="registro">
     <main class="form-signin border border-teal rounded-3 text-center">
-      <form @submit.prevent="singIn">
+      <form @submit.prevent="submitForm">
         <a href="/"
           ><img
             class="mb-4"
             src="../assets/images/index/headerImages/logo.jpg"
-            alt="logo"
+            alt=""
             width="90"
             height="80"
         /></a>
-        <h1 class="h3 mb-3 fw-normal">Inicio de Sesión</h1>
+        <h1 class="h3 mb-3 fw-normal">Registrar mascota!</h1>
 
         <div class="form-floating">
           <input
-            v-model="login.email"
-            type="email"
+            v-model="register.nombre"
+            type="text"
             class="form-control border-teal"
-            id="floatingInput"
-            placeholder="name@example.com"
+            id="Input-name"
+            placeholder="Nombre"
           />
-          <label for="floatingInput">Correo Electronico</label>
+          <label for="Input-name">Nombre de la mascota</label>
         </div>
 
         <div class="form-floating mt-3">
           <input
-            v-model="login.password"
-            type="password"
+            v-model="register.edadMascota"
+            type="text"
             class="form-control border-teal"
-            id="floatingPassword"
-            placeholder="Password"
+            id="Input-lastname"
+            placeholder="Edad"
           />
-          <label for="floatingPassword">Contraseña</label>
+          <label for="Input-lastname">Edad</label>
         </div>
-        <div class="mt-3">
-          <button class="w-100 btn btn-lg btn-outline-teal" type="submit">
-            Ingresar
+
+        <div class=" mt-3">
+          <textarea
+            v-model="register.descripcion"
+            class="border-teal form-control"
+            placeholder="Descripcion"
+            rows="3"
+          />
+        </div>
+        <div class=" mt-3">
+          <textarea
+            v-model="register.img"
+            class="border-teal form-control"
+            placeholder="Enlace de la imagen"
+            rows="2"
+          />
+        </div>
+        <div>
+          <button
+            class="w-100 mt-3 btn btn-lg btn-outline-teal"
+            href="/login"
+            type="submit"
+          >
+            Registrar Mascota
           </button>
-        </div>
-        <div class="mt-3">
-          <a class="text-secondary" href="/register">Registrar cuenta</a>
         </div>
       </form>
     </main>
@@ -56,52 +74,42 @@
 import Footer from "../components/Footer.vue";
 
 export default {
+  name: "Pet Register",
   components: {
     Footer,
   },
   data() {
     return {
-      credentials: [],
-      login: { email: "", password: "" },
+      register: {
+        nombre: "",
+        edadMascota: "",
+        descripcion: "",
+        img: "",
+      },
     };
   },
-  created() {
-    this.listCredentials();
-  },
   methods: {
-    listCredentials() {
+    submitForm() {
+      this.register.edad = parseInt(this.register.edad);
       axios
-        .get("http://localhost:3000/api/user")
-        .then((response) => {
-          console.log(response.data);
-          this.credentials = response.data;
+        .post("http://localhost:3000/api/pet", this.register)
+        .then((res) => {
+          this.register.nombre = "";
+          this.register.edadMascota = "";
+          this.register.descripcion = "";
+          this.register.img = "";
+
+          console.log(res.data.message);
         })
         .catch((e) => {
-          console.log("error" + e);
+          console.log(e.response.data);
         });
-    },
-    singIn() {
-      for (let user of this.credentials) {
-        if (
-          user.correoElectronico == this.login.email &&
-          user.contraseña == this.login.password
-        ) {
-          document.cookie = `nombre=${user.nombre}`;
-          document.cookie = `adopcion=${user.capacidadDeAdopcion}`;
-          document.cookie = `userType=${user.userType}`;
-          document.cookie = `check=true`;
-          console.log("logeado!");
-          window.location.href = "/";
-          break;
-        } else {
-          document.cookie = `check=false`;
-          console.log("nologeado");
-        }
-      }
     },
   },
 };
 </script>
+
+// =========================================================================
 
 <style scoped>
 .bd-placeholder-img {
@@ -117,6 +125,8 @@ export default {
     font-size: 3.5rem;
   }
 }
+
+/*Sección login*/
 
 html,
 body {

@@ -129,7 +129,7 @@
         </div>
 
         <div class="mt-3">
-          <a class="text-secondary ">Ya tienes cuenta?</a>
+          <a href="/login" class="text-secondary ">Ya tienes cuenta?</a>
         </div>
       </form>
     </main>

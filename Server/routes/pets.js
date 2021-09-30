@@ -1,15 +1,15 @@
 import express from "express";
 const router = express.Router();
 
-import User from "../models/user";
+import Pet from "../models/pet";
 
 // ======================================================================
-// Users
+// pets
 
-//User-GET
-router.get("/user", async (req, res) => {
+//pet-GET
+router.get("/pet", async (req, res) => {
   try {
-    const data = await User.find();
+    const data = await Pet.find();
     res.status(200).json(data);
   } catch (error) {
     return res.status(500).json({
@@ -20,11 +20,11 @@ router.get("/user", async (req, res) => {
 });
 
 //GET-by-ID
-router.get("/user/:id", async (req, res) => {
+router.get("/pet/:id", async (req, res) => {
   const _id = req.params.id;
   try {
-    const user = await User.findById(_id);
-    res.json(user);
+    const pet = await Pet.findById(_id);
+    res.json(pet);
   } catch (error) {
     return res.status(400).json({
       messagee: "Error",
@@ -35,17 +35,17 @@ router.get("/user/:id", async (req, res) => {
 });
 
 // Delete
-router.delete("/user/:id", async (req, res) => {
+router.delete("/pet/:id", async (req, res) => {
   const _id = req.params.id;
   try {
-    const user = await User.findByIdAndDelete({ _id });
-    if (!user) {
+    const pet = await Pet.findByIdAndDelete({ _id });
+    if (!pet) {
       return res.status(400).json({
         message: "No id find",
         error,
       });
     }
-    res.json(user);
+    res.json(pet);
   } catch (error) {
     return res.status(400).json({
       mensaje: "Error",
@@ -54,11 +54,11 @@ router.delete("/user/:id", async (req, res) => {
   }
 });
 
-//User-POST
-router.post("/user", async (req, res) => {
+//pet-POST
+router.post("/pet", async (req, res) => {
   const body = req.body;
   try {
-    await User.create(body);
+    await Pet.create(body);
     res.status(200).json({ message: "Register Successfully" });
   } catch (error) {
     return res.status(500).json({
@@ -69,13 +69,13 @@ router.post("/user", async (req, res) => {
   }
 });
 
-//User-PUT
-router.put("/user/:id", async (req, res) => {
+//pet-PUT
+router.put("/pet/:id", async (req, res) => {
   const _id = req.params.id;
   const body = req.body;
   try {
-    const user = await User.findByIdAndUpdate(_id, body, { new: true });
-    res.json(user);
+    const pet = await Pet.findByIdAndUpdate(_id, body, { new: true });
+    res.json(pet);
   } catch (error) {
     return res.status(400).json({
       message: "Error",

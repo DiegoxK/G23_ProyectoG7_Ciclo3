@@ -26,6 +26,16 @@ const routes = [
     name: "Admin",
     component: () => import("../views/AdminVista.vue"),
   },
+  {
+    path: "/adopcion",
+    name: "Adopcion",
+    component: () => import("../views/Successfull.vue"),
+  },
+  {
+    path: "/petRegister",
+    name: "Pet Register",
+    component: () => import("../views/PetRegister.vue"),
+  },
 ];
 
 const router = createRouter({

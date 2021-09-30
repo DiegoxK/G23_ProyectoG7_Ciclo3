@@ -1,6 +1,6 @@
 <template>
   <!-- Header -->
-  <header class="p-3 bg-light text-dark" id="Header">
+  <header class="p-3 text-dark" id="Header">
     <nav class="container bs-teal rounded">
       <hr />
       <h1 class="text-center">Peluditos</h1>
@@ -72,6 +72,22 @@
           >
             Cerrar Sesion
           </button>
+          <button
+            v-if="userType === 'admin'"
+            type="button"
+            onclick="window.location.href='/admin'"
+            class="btn btn-outline-dark me-2"
+          >
+            Vista Administracion
+          </button>
+          <button
+            v-if="userType === 'admin'"
+            type="button"
+            onclick="window.location.href='/petRegister'"
+            class="btn btn-outline-dark me-2"
+          >
+            Registrar Mascota
+          </button>
         </div>
       </div>
     </nav>
@@ -82,9 +98,10 @@
 export default {
   data() {
     return {
-      publicVar: document.cookie,
       name: this.readCookie("nombre"),
       check: this.readCookie("check"),
+      userType: this.readCookie("userType"),
+      adopcion: this.readCookie("adopcion"),
     };
   },
 
@@ -107,6 +124,7 @@ export default {
     logOut() {
       document.cookie = `check=false`;
       this.check = this.readCookie("check");
+      window.location.href = "/";
     },
   },
 };
