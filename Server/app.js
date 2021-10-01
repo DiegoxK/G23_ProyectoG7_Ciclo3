@@ -6,7 +6,8 @@ import history from "connect-history-api-fallback";
 import mongoose from "mongoose";
 
 //server mongoose
-const uri = "mongodb://localhost:27017/mytest";
+const uri =
+  "mongodb+srv://Di:DataBase@cluster0.3f6p4.mongodb.net/peludito?retryWrites=true&w=majority";
 const db = mongoose.connection;
 
 mongoose.connect(uri);
