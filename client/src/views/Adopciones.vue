@@ -25,7 +25,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -33,7 +33,7 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -41,7 +41,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit1.state = true"
               >
                 Editar
@@ -101,10 +101,8 @@
           <div v-if="boxState.edit2.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit2.nombre }}</h5>
-              <div class="contenedor-img">
-              <img v-bind:src="boxState.edit2.img" class="img-fluid h-100 " />
-              </div>
-              <br />
+              <img v-bind:src="boxState.edit2.img" class="img-fluid" />
+              <br /><br />
               <p>Edad: {{ boxState.edit2.edad }}</p>
               <p>{{ boxState.edit2.descripcion }}</p>
             </div>
@@ -113,7 +111,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -121,14 +119,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit2.state = true"
               >
                 Editar
@@ -189,13 +187,11 @@
           <div v-if="boxState.edit3.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit3.nombre }}</h5>
-              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit3.img"
-                class="img-fluid h-100"
+                class="img-fluid"
               />
-              </div>
-              <br />
+              <br /><br />
               <p>Edad: {{ boxState.edit3.edad }}</p>
               <p>{{ boxState.edit3.descripcion }}</p>
             </div>
@@ -204,7 +200,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -212,14 +208,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit3.state = true"
               >
                 Editar
@@ -296,7 +292,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -304,14 +300,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit4.state = true"
               >
                 Editar
@@ -372,13 +368,11 @@
           <div v-if="boxState.edit5.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit5.nombre }}</h5>
-              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit5.img"
-                class="img-fluid h-100"
+                class="img-fluid"
               />
-              </div>
-              <br />
+              <br /><br />
               <p>Edad: {{ boxState.edit5.edad }}</p>
               <p>{{ boxState.edit5.descripcion }}</p>
             </div>
@@ -387,7 +381,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -395,14 +389,14 @@
                 v-else
                 onclick="window.location.href='/login'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit5.state = true"
               >
                 Editar
@@ -462,13 +456,11 @@
           <div v-if="boxState.edit6.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit6.nombre }}</h5>
-              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit6.img"
-                class="img-fluid h-100"
+                class="img-fluid"
               />
-              </div>
-              <br />
+              <br /><br />
               <p>Edad: {{ boxState.edit6.edad }}</p>
               <p>{{ boxState.edit6.descripcion }}</p>
             </div>
@@ -477,7 +469,7 @@
                 v-if="check === 'true'"
                 onclick="window.location.href='/adopcion'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -485,14 +477,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit6.state = true"
               >
                 Editar
@@ -557,12 +549,6 @@
   </div>
 </template>
 
-<style>
-  .contenedor-img {
-    height: 320px;
-    max-height: 320px;
-  }
-</style>
 <script>
 import Header from "../components/Header.vue";
 import Equipo from "../components/index/Equipo.vue";
