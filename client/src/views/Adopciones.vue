@@ -17,7 +17,7 @@
               <h5 class="card-title">{{ boxState.edit1.nombre }}</h5>
               <img v-bind:src="boxState.edit1.img" class="img-fluid" />
               <br /><br />
-              <p>Edad: {{ boxState.edit1.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit1.edad }}</p>
               <p>{{ boxState.edit1.descripcion }}</p>
             </div>
             <div class="card-footer">
@@ -103,7 +103,7 @@
               <h5 class="card-title">{{ boxState.edit2.nombre }}</h5>
               <img v-bind:src="boxState.edit2.img" class="img-fluid" />
               <br /><br />
-              <p>Edad: {{ boxState.edit2.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit2.edad }}</p>
               <p>{{ boxState.edit2.descripcion }}</p>
             </div>
             <div class="card-footer">
@@ -191,7 +191,7 @@
                 v-bind:src="boxState.edit3.img"
                 class="img-fluid"
               /><br /><br />
-              <p>Edad: {{ boxState.edit3.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit3.edad }}</p>
               <p>{{ boxState.edit3.descripcion }}</p>
             </div>
             <div class="card-footer">
@@ -283,7 +283,7 @@
                 v-bind:src="boxState.edit4.img"
                 class="img-fluid"
               /><br /><br />
-              <p>Edad: {{ boxState.edit4.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit4.edad }}</p>
               <p>{{ boxState.edit4.descripcion }}</p>
             </div>
             <div class="card-footer">
@@ -371,7 +371,7 @@
                 v-bind:src="boxState.edit5.img"
                 class="img-fluid"
               /><br /><br />
-              <p>Edad: {{ boxState.edit5.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit5.edad }}</p>
               <p>{{ boxState.edit5.descripcion }}</p>
             </div>
             <div class="card-footer">
@@ -458,7 +458,7 @@
                 v-bind:src="boxState.edit6.img"
                 class="img-fluid"
               /><br /><br />
-              <p>Edad: {{ boxState.edit6.edad }} añitos</p>
+              <p>Edad: {{ boxState.edit6.edad }}</p>
               <p>{{ boxState.edit6.descripcion }}</p>
             </div>
             <div class="card-footer">
