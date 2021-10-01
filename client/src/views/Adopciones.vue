@@ -12,7 +12,7 @@
       <!-- primer mascota-->
       <div class="row">
         <div class="col-sm-4">
-          <div v-if="boxState.edit1.state === false" class="card">
+          <div v-if="boxState.edit1.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit1.nombre }}</h5>
               <img v-bind:src="boxState.edit1.img" class="img-fluid" />
@@ -98,11 +98,13 @@
         <!-- segundo  perro -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit2.state === false" class="card">
+          <div v-if="boxState.edit2.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit2.nombre }}</h5>
-              <img v-bind:src="boxState.edit2.img" class="img-fluid" />
-              <br /><br />
+              <div class="contenedor-img">
+              <img v-bind:src="boxState.edit2.img" class="img-fluid h-100 " />
+              </div>
+              <br />
               <p>Edad: {{ boxState.edit2.edad }}</p>
               <p>{{ boxState.edit2.descripcion }}</p>
             </div>
@@ -184,13 +186,16 @@
         <!-- Tercer mascota -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit3.state === false" class="card">
+          <div v-if="boxState.edit3.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit3.nombre }}</h5>
+              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit3.img"
-                class="img-fluid"
-              /><br /><br />
+                class="img-fluid h-100"
+              />
+              </div>
+              <br />
               <p>Edad: {{ boxState.edit3.edad }}</p>
               <p>{{ boxState.edit3.descripcion }}</p>
             </div>
@@ -276,7 +281,7 @@
       <!-- primer mascota de la segunda fila-->
       <div class="row" with="75%">
         <div class="col-sm-4">
-          <div v-if="boxState.edit4.state === false" class="card">
+          <div v-if="boxState.edit4.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit4.nombre }}</h5>
               <img
@@ -364,13 +369,16 @@
         <!-- segundo  mascota segunda fila -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit5.state === false" class="card">
+          <div v-if="boxState.edit5.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit5.nombre }}</h5>
+              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit5.img"
-                class="img-fluid"
-              /><br /><br />
+                class="img-fluid h-100"
+              />
+              </div>
+              <br />
               <p>Edad: {{ boxState.edit5.edad }}</p>
               <p>{{ boxState.edit5.descripcion }}</p>
             </div>
@@ -451,13 +459,16 @@
         <!-- =============================================================== -->
         <!-- Tercer mascota tercer fila -->
         <div class="col-sm-4">
-          <div v-if="boxState.edit6.state === false" class="card">
+          <div v-if="boxState.edit6.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit6.nombre }}</h5>
+              <div class="contenedor-img">
               <img
                 v-bind:src="boxState.edit6.img"
-                class="img-fluid"
-              /><br /><br />
+                class="img-fluid h-100"
+              />
+              </div>
+              <br />
               <p>Edad: {{ boxState.edit6.edad }}</p>
               <p>{{ boxState.edit6.descripcion }}</p>
             </div>
@@ -535,6 +546,7 @@
           </div>
         </div>
       </div>
+      <div class="container py-5"></div>
     </nav>
     <br />
     <br />
@@ -545,6 +557,12 @@
   </div>
 </template>
 
+<style>
+  .contenedor-img {
+    height: 320px;
+    max-height: 320px;
+  }
+</style>
 <script>
 import Header from "../components/Header.vue";
 import Equipo from "../components/index/Equipo.vue";

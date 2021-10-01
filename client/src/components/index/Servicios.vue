@@ -13,13 +13,15 @@
                 class="img-fluid servicios-imagen"
               />
             </div>
+            <div class="mb-4">
             <h2>Donaciones</h2>
             <p>
               Recuerda, puedes apoyar todo nuestro trabajo y esfuerzo, puedes
               poner tu granito de arena, cada uno de estos peluditos te lo
               agredecerá. !Dona Ya!
             </p>
-
+            </div>
+            <div class="mt-4 pt-3">
             <button
               onclick="window.location.href='https://www.paypal.com/co/home'"
               type="button"
@@ -27,7 +29,7 @@
             >
               Donaciones!!
             </button>
-
+            </div>
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right"></use>
             </svg>
@@ -66,13 +68,15 @@
                 class="img-fluid servicios-imagen"
               />
             </div>
+            <div class="mb-1 ">
             <h2>Adopciones</h2>
             <p>
               Todavía no tienes mascota, no compres, adopta ya, decenas de
               peluditos esperan por tí, de seguro hay uno que se quedatá en tu
               corazón y en tu alma.
             </p>
-
+            </div>
+            <div class="mt-4 pt-3">
             <button
               type="button"
               onclick="window.location.href='/adopciones'"
@@ -80,6 +84,7 @@
             >
               Adopta ya!!
             </button>
+            </div>
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right"></use>
             </svg>
