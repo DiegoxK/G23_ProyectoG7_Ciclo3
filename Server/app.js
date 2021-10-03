@@ -33,9 +33,9 @@ app.use("/api", require("./routes/users"));
 app.use("/api", require("./routes/pets"));
 
 //routes
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello");
+// });
 
 //History routes
 app.use(history());

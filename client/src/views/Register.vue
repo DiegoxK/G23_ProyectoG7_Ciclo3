@@ -184,7 +184,7 @@ export default {
       }
 
       axios
-        .post("http://localhost:3000/api/user", this.register)
+        .post("/api/user", this.register)
         .then((res) => {
           this.register.nombre = "";
           this.register.apellido = "";

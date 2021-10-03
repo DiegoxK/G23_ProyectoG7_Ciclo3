@@ -92,7 +92,7 @@ export default {
     submitForm() {
       this.register.edad = parseInt(this.register.edad);
       axios
-        .post("http://localhost:3000/api/pet", this.register)
+        .post("/api/pet", this.register)
         .then((res) => {
           this.register.nombre = "";
           this.register.edadMascota = "";

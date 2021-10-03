@@ -110,7 +110,7 @@ export default {
   methods: {
     listCredentials() {
       axios
-        .get("http://localhost:3000/api/user")
+        .get("/api/user")
         .then((response) => {
           console.log(response.data);
           this.users = response.data;
@@ -122,7 +122,7 @@ export default {
     enableEdit(id) {
       this.edit = true;
       axios
-        .get(`http://localhost:3000/api/user/${id}`)
+        .get(`/api/user/${id}`)
         .then((res) => {
           this.userEdit = res.data;
         })
@@ -136,7 +136,7 @@ export default {
 
     editUser(id) {
       axios
-        .put(`http://localhost:3000/api/user/${id}`, this.userEdit)
+        .put(`/api/user/${id}`, this.userEdit)
         .then((res) => {
           this.listCredentials();
           this.edit = false;
@@ -147,7 +147,7 @@ export default {
     },
     deleteUser(id) {
       axios
-        .delete(`http://localhost:3000/api/user/${id}`)
+        .delete(`/api/user/${id}`)
         .then((res) => {
           this.listCredentials();
         })

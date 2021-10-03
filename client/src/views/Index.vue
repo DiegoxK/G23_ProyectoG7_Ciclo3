@@ -81,5 +81,8 @@ export default {
     Equipo,
     Footer,
   },
+  created() {
+    document.cookie = `check=false`;
+  },
 };
 </script>

@@ -75,7 +75,7 @@ export default {
 
     listCredentials() {
       axios
-        .get("http://localhost:3000/api/user")
+        .get("/api/user")
         .then((response) => {
           console.log(response.data);
           this.credentials = response.data;

@@ -623,7 +623,7 @@ export default {
 
     editPet1(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit1.nombre = res.data.nombre;
           this.boxState.edit1.edad = res.data.edadMascota;
@@ -635,7 +635,7 @@ export default {
     },
     editPet2(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit2.nombre = res.data.nombre;
           this.boxState.edit2.edad = res.data.edadMascota;
@@ -647,7 +647,7 @@ export default {
     },
     editPet3(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit3.nombre = res.data.nombre;
           this.boxState.edit3.edad = res.data.edadMascota;
@@ -659,7 +659,7 @@ export default {
     },
     editPet4(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit4.nombre = res.data.nombre;
           this.boxState.edit4.edad = res.data.edadMascota;
@@ -671,7 +671,7 @@ export default {
     },
     editPet5(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit5.nombre = res.data.nombre;
           this.boxState.edit5.edad = res.data.edadMascota;
@@ -683,7 +683,7 @@ export default {
     },
     editPet6(id) {
       axios
-        .get(`http://localhost:3000/api/pet/${id}`)
+        .get(`/api/pet/${id}`)
         .then((res) => {
           this.boxState.edit6.nombre = res.data.nombre;
           this.boxState.edit6.edad = res.data.edadMascota;
@@ -701,7 +701,7 @@ export default {
         img: this.boxState.edit1.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit1.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit1.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit1.state = false;
@@ -721,7 +721,7 @@ export default {
         img: this.boxState.edit2.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit2.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit2.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit2.state = false;
@@ -741,7 +741,7 @@ export default {
         img: this.boxState.edit3.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit3.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit3.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit3.state = false;
@@ -761,7 +761,7 @@ export default {
         img: this.boxState.edit4.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit4.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit4.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit4.state = false;
@@ -781,7 +781,7 @@ export default {
         img: this.boxState.edit5.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit5.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit5.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit5.state = false;
@@ -801,7 +801,7 @@ export default {
         img: this.boxState.edit6.img,
       };
       axios
-        .put(`http://localhost:3000/api/pet/${this.boxState.edit6.id}`, pet)
+        .put(`/api/pet/${this.boxState.edit6.id}`, pet)
         .then((res) => {
           console.log(res);
           this.boxState.edit6.state = false;
@@ -815,7 +815,7 @@ export default {
 
     deletePet1() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit1.id}`)
+        .delete(`/api/pet/${this.boxState.edit1.id}`)
         .then((res) => {
           this.boxState.edit1.state = false;
           this.listPets();
@@ -827,7 +827,7 @@ export default {
     },
     deletePet2() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit2.id}`)
+        .delete(`/api/pet/${this.boxState.edit2.id}`)
         .then((res) => {
           this.boxState.edit2.state = false;
           this.listPets();
@@ -839,7 +839,7 @@ export default {
     },
     deletePet3() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit3.id}`)
+        .delete(`/api/pet/${this.boxState.edit3.id}`)
         .then((res) => {
           this.boxState.edit3.state = false;
           this.listPets();
@@ -851,7 +851,7 @@ export default {
     },
     deletePet4() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit4.id}`)
+        .delete(`/api/pet/${this.boxState.edit4.id}`)
         .then((res) => {
           this.boxState.edit4.state = false;
           this.listPets();
@@ -863,7 +863,7 @@ export default {
     },
     deletePet5() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit5.id}`)
+        .delete(`/api/pet/${this.boxState.edit5.id}`)
         .then((res) => {
           this.boxState.edit5.state = false;
           this.listPets();
@@ -875,7 +875,7 @@ export default {
     },
     deletePet6() {
       axios
-        .delete(`http://localhost:3000/api/pet/${this.boxState.edit6.id}`)
+        .delete(`/api/pet/${this.boxState.edit6.id}`)
         .then((res) => {
           this.boxState.edit6.state = false;
           this.listPets();
@@ -887,7 +887,7 @@ export default {
     },
     listPets() {
       axios
-        .get("http://localhost:3000/api/pet")
+        .get("/api/pet")
         .then((response) => {
           this.pets = response.data;
 
