@@ -24,7 +24,7 @@
                 class="btn btn-secondary"
                 href="https://www.instagram.com/p/B-j_aUggu8h/"
                 role="button"
-                >Ver más =></a
+                >Ver más </a
               >
             </div>
           </div>
@@ -48,7 +48,7 @@
                 class="btn btn-secondary"
                 href="https://www.instagram.com/p/CQB1bvWnMG2/"
                 role="button"
-                >Ver más =></a
+                >Ver más </a
               >
             </div>
           </div>
@@ -72,7 +72,7 @@
                 class="btn btn-secondary"
                 href="https://www.instagram.com/p/CL4jr2LAKUk/"
                 role="button"
-                >Ver más =></a
+                >Ver más </a
               >
             </div>
           </div>
@@ -96,7 +96,7 @@
                 class="btn btn-secondary"
                 href="https://www.instagram.com/p/B-j735dAPaO/"
                 role="button"
-                >Ver más =></a
+                >Ver más </a
               >
             </div>
           </div>
@@ -114,6 +114,7 @@
   left: 10em;
   right: 10em;
   border: 4px solid #62f5abed;
+  border-radius: 15px 50px;
 }
 
 .n2,
@@ -123,6 +124,7 @@
   left: 50em;
   right: 50em;
   border: 4px solid #62f5abed;
+  border-radius: 15px 50px;
 }
 
 #news1,
@@ -132,6 +134,7 @@
   position: backgroung;
   width: 100%;
   height: 100%;
+  border-radius: 15px 50px;
 }
 
 .btn-secondary,

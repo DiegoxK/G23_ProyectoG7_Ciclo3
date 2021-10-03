@@ -12,7 +12,7 @@
       <!-- primer mascota-->
       <div class="row">
         <div class="col-sm-4">
-          <div v-if="boxState.edit1.state === false" class="card">
+          <div v-if="boxState.edit1.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit1.nombre }}</h5>
               <img v-bind:src="boxState.edit1.img" class="img-fluid" />
@@ -23,9 +23,9 @@
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -33,7 +33,7 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -41,7 +41,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit1.state = true"
               >
                 Editar
@@ -98,7 +98,7 @@
         <!-- segundo  perro -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit2.state === false" class="card">
+          <div v-if="boxState.edit2.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit2.nombre }}</h5>
               <img v-bind:src="boxState.edit2.img" class="img-fluid" />
@@ -109,9 +109,9 @@
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -119,14 +119,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit2.state = true"
               >
                 Editar
@@ -184,22 +184,20 @@
         <!-- Tercer mascota -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit3.state === false" class="card">
+          <div v-if="boxState.edit3.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit3.nombre }}</h5>
-              <img
-                v-bind:src="boxState.edit3.img"
-                class="img-fluid"
-              /><br /><br />
+              <img v-bind:src="boxState.edit3.img" class="img-fluid" />
+              <br /><br />
               <p>Edad: {{ boxState.edit3.edad }}</p>
               <p>{{ boxState.edit3.descripcion }}</p>
             </div>
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -207,14 +205,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit3.state = true"
               >
                 Editar
@@ -276,7 +274,7 @@
       <!-- primer mascota de la segunda fila-->
       <div class="row" with="75%">
         <div class="col-sm-4">
-          <div v-if="boxState.edit4.state === false" class="card">
+          <div v-if="boxState.edit4.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit4.nombre }}</h5>
               <img
@@ -289,9 +287,9 @@
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -299,14 +297,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit4.state = true"
               >
                 Editar
@@ -364,22 +362,20 @@
         <!-- segundo  mascota segunda fila -->
 
         <div class="col-sm-4">
-          <div v-if="boxState.edit5.state === false" class="card">
+          <div v-if="boxState.edit5.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit5.nombre }}</h5>
-              <img
-                v-bind:src="boxState.edit5.img"
-                class="img-fluid"
-              /><br /><br />
+              <img v-bind:src="boxState.edit5.img" class="img-fluid" />
+              <br /><br />
               <p>Edad: {{ boxState.edit5.edad }}</p>
               <p>{{ boxState.edit5.descripcion }}</p>
             </div>
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -387,14 +383,14 @@
                 v-else
                 onclick="window.location.href='/login'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit5.state = true"
               >
                 Editar
@@ -451,22 +447,20 @@
         <!-- =============================================================== -->
         <!-- Tercer mascota tercer fila -->
         <div class="col-sm-4">
-          <div v-if="boxState.edit6.state === false" class="card">
+          <div v-if="boxState.edit6.state === false" class="card h-100">
             <div class="card-body">
               <h5 class="card-title">{{ boxState.edit6.nombre }}</h5>
-              <img
-                v-bind:src="boxState.edit6.img"
-                class="img-fluid"
-              /><br /><br />
+              <img v-bind:src="boxState.edit6.img" class="img-fluid" />
+              <br /><br />
               <p>Edad: {{ boxState.edit6.edad }}</p>
               <p>{{ boxState.edit6.descripcion }}</p>
             </div>
             <div class="card-footer">
               <button
                 v-if="check === 'true'"
-                onclick="window.location.href='/adopcion'"
+                v-on:click="LogAlert"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-4 mx-5"
               >
                 Adoptalo ya
               </button>
@@ -474,14 +468,14 @@
                 v-else
                 onclick="window.location.href='/register'"
                 type="button"
-                class="btn btn-outline-success"
+                class="btn btn-outline-success me-5 mx-5"
               >
                 Adoptalo ya
               </button>
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-warning me-5 mx-3"
                 v-on:click="boxState.edit6.state = true"
               >
                 Editar
@@ -535,6 +529,7 @@
           </div>
         </div>
       </div>
+      <div class="container py-5"></div>
     </nav>
     <br />
     <br />
@@ -620,6 +615,12 @@ export default {
     this.listPets();
   },
   methods: {
+    LogAlert() {
+      Swal.fire(
+        "¡¡Felicidades!! Nos comunaremos contigo en los proximo dias con los datos registrados"
+      );
+    },
+
     editPet1(id) {
       axios
         .get(`http://localhost:3000/api/pet/${id}`)

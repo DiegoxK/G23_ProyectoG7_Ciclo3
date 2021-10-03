@@ -69,6 +69,10 @@ export default {
     this.listCredentials();
   },
   methods: {
+    LogAlert() {
+      Swal.fire("Datos Invalidos");
+    },
+
     listCredentials() {
       axios
         .get("http://localhost:3000/api/user")
@@ -95,6 +99,7 @@ export default {
           break;
         } else {
           document.cookie = `check=false`;
+          this.LogAlert();
           console.log("nologeado");
         }
       }

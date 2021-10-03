@@ -23,7 +23,7 @@
         >
           <img
             src="../assets/images/index/headerImages/logo.jpg"
-            class="img-icon"
+            class="img-icon img-fluid"
             alt="logo"
           />
         </a>
@@ -60,7 +60,7 @@
             onclick="window.location.href='/register'"
             class="btn btn-outline-dark me-2"
           >
-            Regsitro
+            Registro
           </button>
         </div>
         <div v-else class="text-end">
