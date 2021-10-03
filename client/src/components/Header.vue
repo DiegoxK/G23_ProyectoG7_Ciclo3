@@ -47,7 +47,7 @@
           </li>
         </ul>
 
-        <div v-if="check == 'false'" class="text-end">
+        <div v-if="check != 'true'" class="text-end">
           <button
             type="button"
             onclick="window.location.href='/login'"
