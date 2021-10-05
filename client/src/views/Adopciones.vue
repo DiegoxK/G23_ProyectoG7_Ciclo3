@@ -13,14 +13,14 @@
       <div class="row">
         <div class="col-sm-4">
           <div v-if="boxState.edit1.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit1.nombre }}</h5>
-              <img v-bind:src="boxState.edit1.img" class="img-fluid" />
+              <img v-bind:src="boxState.edit1.img" class="img-fluid container" />
               <br /><br />
               <p>Edad: {{ boxState.edit1.edad }}</p>
               <p>{{ boxState.edit1.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -55,29 +55,29 @@
               <input
                 v-model="boxState.edit1.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit1.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit1.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit1.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning  me-3 mx-3"
                 v-on:click="submitPet1()"
               >
                 Terminar
@@ -85,7 +85,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger me-3 mx-3"
                 v-on:click="deletePet1"
               >
                 Eliminar
@@ -99,14 +99,14 @@
 
         <div class="col-sm-4">
           <div v-if="boxState.edit2.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit2.nombre }}</h5>
-              <img v-bind:src="boxState.edit2.img" class="img-fluid" />
+              <img v-bind:src="boxState.edit2.img" class="img-fluid container" />
               <br /><br />
               <p>Edad: {{ boxState.edit2.edad }}</p>
               <p>{{ boxState.edit2.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -140,21 +140,21 @@
               <input
                 v-model="boxState.edit2.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit2.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit2.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit2.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
@@ -162,7 +162,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning me-3 mx-3"
                 v-on:click="submitPet2()"
               >
                 Terminar
@@ -170,7 +170,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger me-3 mx-3"
                 v-on:click="deletePet2"
               >
                 Eliminar
@@ -185,14 +185,14 @@
 
         <div class="col-sm-4">
           <div v-if="boxState.edit3.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit3.nombre }}</h5>
-              <img v-bind:src="boxState.edit3.img" class="img-fluid" />
+              <img v-bind:src="boxState.edit3.img" class="img-fluid container" />
               <br /><br />
               <p>Edad: {{ boxState.edit3.edad }}</p>
               <p>{{ boxState.edit3.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -227,29 +227,29 @@
               <input
                 v-model="boxState.edit3.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit3.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit3.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit3.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning me-3 mx-3"
                 v-on:click="submitPet3()"
               >
                 Terminar
@@ -257,7 +257,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger me-3 mx-3"
                 v-on:click="deletePet3"
               >
                 Eliminar
@@ -275,16 +275,16 @@
       <div class="row" with="75%">
         <div class="col-sm-4">
           <div v-if="boxState.edit4.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit4.nombre }}</h5>
               <img
                 v-bind:src="boxState.edit4.img"
-                class="img-fluid"
+                class="img-fluid container"
               /><br /><br />
               <p>Edad: {{ boxState.edit4.edad }}</p>
               <p>{{ boxState.edit4.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -319,29 +319,29 @@
               <input
                 v-model="boxState.edit4.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit4.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit4.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit4.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning me-3 mx-3"
                 v-on:click="submitPet4()"
               >
                 Terminar
@@ -349,7 +349,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger me-3 mx-3"
                 v-on:click="deletePet4"
               >
                 Eliminar
@@ -363,14 +363,14 @@
 
         <div class="col-sm-4">
           <div v-if="boxState.edit5.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit5.nombre }}</h5>
-              <img v-bind:src="boxState.edit5.img" class="img-fluid" />
+              <img v-bind:src="boxState.edit5.img" class="img-fluid container" />
               <br /><br />
               <p>Edad: {{ boxState.edit5.edad }}</p>
               <p>{{ boxState.edit5.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -405,29 +405,29 @@
               <input
                 v-model="boxState.edit5.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit5.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit5.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit5.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning mt-1"
                 v-on:click="submitPet5()"
               >
                 Terminar
@@ -435,7 +435,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger mt-1"
                 v-on:click="deletePet5"
               >
                 Eliminar
@@ -448,14 +448,14 @@
         <!-- Tercer mascota tercer fila -->
         <div class="col-sm-4">
           <div v-if="boxState.edit6.state === false" class="card h-100">
-            <div class="card-body">
+            <div class="card-body container">
               <h5 class="card-title">{{ boxState.edit6.nombre }}</h5>
-              <img v-bind:src="boxState.edit6.img" class="img-fluid" />
+              <img v-bind:src="boxState.edit6.img" class="img-fluid container" />
               <br /><br />
               <p>Edad: {{ boxState.edit6.edad }}</p>
               <p>{{ boxState.edit6.descripcion }}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true'"
                 v-on:click="LogAlert"
@@ -490,29 +490,29 @@
               <input
                 v-model="boxState.edit6.nombre"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit6.edad"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <input
                 v-model="boxState.edit6.img"
                 type="text"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
               />
               <textarea
                 v-model="boxState.edit6.descripcion"
-                class="border-teal form-control"
+                class="border-teal form-control mt-1"
                 rows="3"
               ></textarea>
             </div>
-            <div class="card-footer">
+            <div class="card-footer container text-center">
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-warning "
+                class="btn btn-outline-warning me-3 mx-3"
                 v-on:click="submitPet6()"
               >
                 Terminar
@@ -520,7 +520,7 @@
               <button
                 v-if="check === 'true' && userType === 'admin'"
                 type="button"
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger me-3 mx-3"
                 v-on:click="deletePet6"
               >
                 Eliminar

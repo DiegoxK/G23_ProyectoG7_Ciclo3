@@ -6,7 +6,7 @@
         <h2>Servicios</h2>
         <div class="row g-5 py-5 row-cols-1 row-cols-lg-3 container-fluid">
           <!-- Servicio1 -->
-          <div class="feature col">
+          <div class="feature col container">
             <div>
               <img
                 src="../../assets/images/index/servicios/Donacion.jpeg"
@@ -21,7 +21,7 @@
                 agredecerá. !Dona Ya!
               </p>
             </div>
-            <div class="mt-4 pt-3">
+            <div class="container text-start h-auto">
               <button
                 onclick="window.location.href='https://www.paypal.com/co/home'"
                 type="button"
@@ -35,7 +35,7 @@
             </svg>
           </div>
           <!-- Servicio 2 -->
-          <div class="feature col">
+          <div class="feature col container">
             <div>
               <img
                 src="../../assets/images/index/servicios/productos.jpg"
@@ -48,7 +48,7 @@
               tienes mascota lo puedes consentir con los mejores productos del
               mercado para aseo, alimentación y salud.
             </p>
-
+            <div class="container mt-3">
             <button
               onclick="window.location.href='https://listado.mercadolibre.com.co/productos-animales#D[A:productos%20animales]'"
               type="button"
@@ -56,19 +56,20 @@
             >
               Compra Ya!
             </button>
+            </div>
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right"></use>
             </svg>
           </div>
           <!-- Servicio 3 -->
-          <div class="feature col">
+          <div class="feature col container">
             <div>
               <img
                 src="../../assets/images/index/servicios/adopta.jpeg"
                 class="img-fluid servicios-imagen"
               />
             </div>
-            <div class="mb-1 ">
+            <div class="mb-1">
               <h2>Adopciones</h2>
               <p>
                 Todavía no tienes mascota, no compres, adopta ya, decenas de
@@ -76,11 +77,11 @@
                 corazón y en tu alma.
               </p>
             </div>
-            <div class="mt-4 pt-3">
+            <div class="container text-start">
               <button
                 type="button"
                 onclick="window.location.href='/adopciones'"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark "
               >
                 Adopta ya!!
               </button>
