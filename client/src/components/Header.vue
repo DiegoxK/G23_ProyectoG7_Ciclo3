@@ -63,7 +63,7 @@
             Registro
           </button>
         </div>
-        <div v-else class="text-end">
+        <div v-else class="text-end mb-3">
           <p class="text-capitalize fw-bold">Bienvenido! {{ name }}</p>
           <button
             type="button"
