@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 
 //server mongoose
 const uri =
-  "mongodb+srv://Di:DataBase@cluster0.3f6p4.mongodb.net/peludito?retryWrites=true&w=majority";
+  "mongodb+srv://Lau:peluditos3000@cluster0.3f6p4.mongodb.net/peludito?retryWrites=true&w=majority";
 const db = mongoose.connection;
 
 mongoose.connect(uri);
