@@ -85,6 +85,8 @@ export default {
         });
     },
     singIn() {
+      let check = false;
+
       for (let user of this.credentials) {
         if (
           user.correoElectronico == this.login.email &&
@@ -94,14 +96,19 @@ export default {
           document.cookie = `adopcion=${user.capacidadDeAdopcion}`;
           document.cookie = `userType=${user.userType}`;
           document.cookie = `check=true`;
-          console.log("logeado!");
-          window.location.href = "/";
+          check = true;
+          
           break;
-        } else {
-          document.cookie = `check=false`;
-          this.LogAlert();
-          console.log("nologeado");
         }
+      }
+      if(check === false){
+        document.cookie = `check=false`;
+        this.LogAlert();
+        console.log("nologeado");
+      }
+      else{
+        console.log("logeado!");
+        window.location.href = "/";
       }
     },
   },
