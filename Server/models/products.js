@@ -7,7 +7,7 @@ const productosSchema = Schema({
     nombre: { type: String, required: [true, "Nombre obligatorio"] },
     stock:Number,
     precio: { type: Number, required: [true, "El precio es obligatorio"] },
-    caracteristica: { type: String, required: [true, "Caracteristica obligatoria"] },
+    descripcion: { type: String, required: [true, "Descripción obligatoria"] },
 });
 
 // Convertir a modelo
